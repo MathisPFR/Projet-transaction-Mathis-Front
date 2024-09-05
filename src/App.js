@@ -6,6 +6,9 @@ import Homepage from './components/Homepage';
 import Register from './components/Register';
 import Transactions from './components/Transactions';
 import Charts from './components/Charts';
+import AddTransaction from './components/AddTransaction';
+import EditTransaction from './components/EditTransaction';
+import TotalTransactions from './components/TotalTransactions';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(!!localStorage.getItem('token'));
@@ -30,6 +33,11 @@ function App() {
               <Route path="/register" element={<Register />} />
               <Route path="/transactions" element={<Transactions />} />
               <Route path="/charts" element={<Charts />} />
+              <Route path="/add-transaction" element={<AddTransaction />} />
+              <Route path="/edit-transaction/:id" element={<EditTransaction />} />
+              <Route path="/total-transactions/" element={<TotalTransactions />} />
+
+              
             </Routes>
           </div>
         ) : (
