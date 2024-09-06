@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Financy - Personal Finances Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+Financy est une application web qui permet aux utilisateurs de gérer leurs transactions financières personnelles. L'application inclut des fonctionnalités d'authentification, d'ajout, de modification, et de suppression de transactions. Elle propose également des visualisations graphiques des revenus et des dépenses.
 
-## Available Scripts
+## Fonctionnalités
 
-In the project directory, you can run:
+- **Inscription et Connexion** : Les utilisateurs peuvent s'inscrire, se connecter et se déconnecter.
+- **Gestion des transactions** : Ajouter, modifier et supprimer des transactions (revenus/dépenses).
+- **Visualisation des transactions** : Liste complète des transactions avec des graphiques (donut et line chart) pour suivre l'évolution des finances.
+- **Calcul des totaux** : Revenu total, dépense totale et balance globale affichés sous forme de cartes.
+- **Interface intuitive** : Utilisation de Tailwind CSS et Daisy UI pour une interface utilisateur réactive et conviviale.
 
-### `npm start`
+## Technologies utilisées
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend** : React.js, Tailwind CSS, Daisy UI, Chart.js
+- **Backend** : Laravel (API pour gérer les transactions)
+- **Authentification** : Laravel Sanctum pour l'authentification via tokens.
+- **Routing** : React Router
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Prérequis
 
-### `npm test`
+Avant de commencer, assurez-vous d'avoir les éléments suivants installés sur votre machine :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Node.js](https://nodejs.org/en/) (Version 14 ou supérieure)
+- [NPM](https://www.npmjs.com/get-npm) ou [Yarn](https://yarnpkg.com/)
+- [PHP](https://www.php.net/) (Version 7.4 ou supérieure) et [Composer](https://getcomposer.org/)
+- [Laravel](https://laravel.com/)
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Backend (Laravel)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clonez le projet backend (si ce n'est pas déjà fait) :
+   ```bash
+   git clone https://github.com/votre-repo/laravel-backend.git
+   cd laravel-backend
