@@ -12,7 +12,7 @@ const LogoutButton = ({ setIsAuthenticated }) => {
     setIsAuthenticated(false);
 
     // Rediriger vers la page de login
-    navigate('/login');
+    navigate('/');
   };
 
   return (

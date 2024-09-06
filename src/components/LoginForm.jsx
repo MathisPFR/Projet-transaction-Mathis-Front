@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const LoginForm = ({ onLoginSuccess }) => {
   const [email, setEmail] = useState('');
@@ -28,6 +29,8 @@ const LoginForm = ({ onLoginSuccess }) => {
   return (
     <form onSubmit={handleSubmit} className="form-control max-w-xs mx-auto p-4">
       {error && <p className="text-red-500">{error}</p>}
+
+      <h1 className='title-login'>Connexion</h1>
       <input
         type="email"
         placeholder="Email"
@@ -47,6 +50,9 @@ const LoginForm = ({ onLoginSuccess }) => {
       <button type="submit" className="btn btn-primary w-full">
         Connexion
       </button>
+      <Link to="/register" className="register-login-btn hover:text-blue-500 hover:underline">
+        Vous n'avez pas de compte ?
+      </Link>
     </form>
   );
 };

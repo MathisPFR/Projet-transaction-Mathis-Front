@@ -30,7 +30,6 @@ function App() {
             <Header setIsAuthenticated={setIsAuthenticated} />  {/* Passer setIsAuthenticated au header */}
             <Routes>
               <Route path="/" element={<Homepage />} />
-              <Route path="/register" element={<Register />} />
               <Route path="/transactions" element={<Transactions />} />
               <Route path="/charts" element={<Charts />} />
               <Route path="/add-transaction" element={<AddTransaction />} />
@@ -42,6 +41,7 @@ function App() {
           </div>
         ) : (
           <Routes>
+            <Route path="/register" element={<Register />} />
             <Route path="/login" element={<LoginForm onLoginSuccess={handleLoginSuccess} />} />
             <Route path="*" element={<LoginForm onLoginSuccess={handleLoginSuccess} />} />
           </Routes>

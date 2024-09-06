@@ -29,3 +29,18 @@ h1 {
 .list-transactions {
   margin-bottom: 40px;
 }
+
+.flex-container-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-login {
+  text-align: center;
+}
+
+.register-login-btn {
+  margin-top: 10px;
+  text-align: center;
+}
