@@ -16,7 +16,7 @@ const LogoutButton = ({ setIsAuthenticated }) => {
   };
 
   return (
-    <button onClick={handleLogout} className="btn btn-secondary">
+    <button onClick={handleLogout} className="btn btn-primary">
       Déconnexion
     </button>
   );
