@@ -17,3 +17,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.list-transactions {
+  margin-bottom: 40px;
+}

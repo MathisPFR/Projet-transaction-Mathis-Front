@@ -58,7 +58,7 @@ const Transactions = () => {
   }
 
   return (
-    <div>
+    <div className="list-transactions">
       <h1>Liste des transactions</h1>
 
       <div className="overflow-x-auto">
